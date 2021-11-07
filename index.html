@@ -4,131 +4,224 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Роман Кобеев портфолио</title>
   </head>
   <body>
-    <header class="main-header">
+    <!-- header section -->
+    <header class="header-section">
       <div class="container">
-        <div class="main-header__logo">
-          Павел Дегтяренко.
-          <span>Портфолио</span>
+        <!-- navigation section -->
+        <div class="header-all-elements">
+          <nav class="nav-section">
+            <!-- logo -->
+            <div class="logo-img">
+              <img src="./images/roma.jpg" alt="" />
+            </div>
+            <!-- header links section -->
+            <ul class="list menu-list">
+              <li class="menu-item">
+                <a class="link header-nav-link active-page" href="./">
+                  Github
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="link header-nav-link" href="./contacts.html">
+                  Резюме
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- header contacts section -->
+          <ul class="list header-nav-contacts">
+            <li class="contact-item">
+              <a
+                class="link header-contact-link"
+                href="mailto:roman_kobeev@mail.ru"
+              >
+                roman_kobeev@mail.ru
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="link header-contact-link" href="tel:+79286609498">
+                +7 928 660 94 98
+              </a>
+            </li>
+          </ul>
         </div>
-        <a
-          class="main-header__resume"
-          href="https://github.com/pavel-else/resume.git"
-        >
-          Обо мне
-        </a>
       </div>
     </header>
-    <main class="content">
-      <section class="container">
-        <ul class="portfolio__items">
-          <li class="portfolio__item project">
-            <h3 class="project__name">Gllacy</h3>
-            <div class="project__text-block">
-              <p class="project__description">
-                Онлайн-магазин по продаже мороженого. Проект для защиты на
-                интенсиве HTMLAcademy
-              </p>
-              <p class="project__stack">HTML5, CSS3, JS, flex-box, BEM</p>
-              <p class="project__year">2018 г.</p>
-              <a
-                href="https://github.com/pavel-else/243899-gllacy.git"
-                class="project__github"
-              >
-                Репозиторий
-              </a>
-            </div>
-            <img
-              class="project__img"
-              width="480"
-              height="320"
-              src="img/gllacy.png"
-            />
-            <a class="project__link" href="gllacy/index.html">Просмотреть</a>
-          </li>
-          <li class="portfolio__item project">
-            <h3 class="project__name">Cake</h3>
-            <div class="project__text-block">
-              <p class="project__description">
-                Сайт кондитерских изделий. Готовое решение от студии Клипсайт
-              </p>
-              <p class="project__stack">HTML5, CSS3, flex-box, Drupal</p>
-              <p class="project__year">2017 г.</p>
-              <a
-                href="https://github.com/pavel-else/cake.git"
-                class="project__github"
-              >
-                Репозиторий
-              </a>
-            </div>
-            <img
-              class="project__img"
-              width="480"
-              height="320"
-              src="img/cake.png"
-            />
-            <a class="project__link" href="cake/index.html">Просмотреть</a>
-          </li>
-          <li class="portfolio__item project">
-            <h3 class="project__name">Templatemonster-53088</h3>
-            <div class="project__text-block">
-              <p class="project__description">
-                Интернет-магазин спортивных товаров. Взят с сайта шаблонов
-                TemplateMonster
-              </p>
-              <p class="project__stack">HTML5, CSS3</p>
-              <p class="project__year">2017 г.</p>
-              <a
-                href="https://github.com/pavel-else/template_1.git"
-                class="project__github"
-              >
-                Репозиторий
-              </a>
-            </div>
-            <img
-              class="project__img"
-              width="480"
-              height="320"
-              src="img/template.png"
-            />
-            <a class="project__link" href="Templatemonster-53088/index.html">
-              Просмотреть
-            </a>
-          </li>
-          <li class="portfolio__item project">
-            <h3 class="project__name">Cat Shop</h3>
-            <div class="project__text-block">
-              <p class="project__description">
-                Страничка, продающая корм для котиков. Практическое задание
-                перед собеседованием в FunBox
-              </p>
-              <p class="project__stack">HTML5, CSS3</p>
-              <p class="project__year">2017 г.</p>
-              <a
-                href="https://github.com/pavel-else/cat-shop.git"
-                class="project__github"
-              >
-                Репозиторий
-              </a>
-            </div>
-            <img
-              class="project__img"
-              width="480"
-              height="320"
-              src="img/cat-shop.png"
-            />
-            <a class="project__link" href="cat-shop2/index.html">Просмотреть</a>
-          </li>
-        </ul>
+
+    <!-- main section -->
+    <main class="section main-section">
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Проекты</h1>
+          <ul class="list portfolio-filter">
+            <li class="category-item">
+              <button type="button" class="btn btn-category active-btn">
+                Все
+              </button>
+            </li>
+            <li class="category-item">
+              <button type="button" class="btn btn-category">Лендинги</button>
+            </li>
+            <li class="category-item">
+              <button type="button" class="btn btn-category">SPA</button>
+            </li>
+            <li class="category-item">
+              <button type="button" class="btn btn-category">
+                Многостраничники
+              </button>
+            </li>
+            <li class="category-item">
+              <button type="button" class="btn btn-category">Визитки</button>
+            </li>
+          </ul>
+
+          <ul class="list portfolio-items-list">
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/tekhnokryak.jpg"
+                alt="Технокряк"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Технокряк
+                </h3>
+                <p class="description-category">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/poster.jpg"
+                alt="Постер New Orlean vs Golden Star"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="description-category">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/seafood.jpg"
+                alt="Ресторан Seafood"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Ресторан Seafood
+                </h3>
+                <p class="description-category">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/prime.jpg"
+                alt="Проект Prime"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Проект Prime
+                </h3>
+                <p class="description-category">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/boxes.jpg"
+                alt="Проект Boxes"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Проект Boxes
+                </h3>
+                <p class="description-category">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/site-inspiration.jpg"
+                alt="Inspiration has no Borders"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Inspiration has no Borders
+                </h3>
+                <p class="description-category">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/limited-edition.jpg"
+                alt="Издание Limited Edition"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Издание Limited Edition
+                </h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/project-lab.jpg"
+                alt="Проект LAB"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Проект LAB
+                </h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-item-image"
+                src="./images/growing-business-app.jpg"
+                alt="Growing Business"
+                width="370"
+              />
+              <div class="portfolio-item-text">
+                <h3 class="portfolio-item-name general-header-properties">
+                  Growing Business
+                </h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="container">
-        <p class="main-footer__email">de.pavel.se@yandex.ru</p>
-      </div>
-    </footer>
+
+    <!-- <footer class="footer-section"></footer> -->
   </body>
 </html>
