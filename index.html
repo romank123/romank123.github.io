@@ -73,28 +73,54 @@
           <h1 class="visually-hidden">Проекты</h1>
           <ul class="list portfolio-filter">
             <li class="category-item">
-              <button type="button" class="btn btn-category active-btn">
+              <button
+                type="button"
+                class="btn btn-category active-btn"
+                data-filter="all"
+              >
                 Все
               </button>
             </li>
             <li class="category-item">
-              <button type="button" class="btn btn-category">Лендинги</button>
+              <button
+                type="button"
+                class="btn btn-category"
+                data-filter=".category-a"
+              >
+                Лендинги
+              </button>
             </li>
             <li class="category-item">
-              <button type="button" class="btn btn-category">SPA</button>
+              <button
+                type="button"
+                class="btn btn-category"
+                data-filter=".category-b"
+              >
+                SPA
+              </button>
             </li>
             <li class="category-item">
-              <button type="button" class="btn btn-category">
+              <button
+                type="button"
+                class="btn btn-category"
+                data-filter=".category-c"
+              >
                 Многостраничники
               </button>
             </li>
             <li class="category-item">
-              <button type="button" class="btn btn-category">Визитки</button>
+              <button
+                type="button"
+                class="btn btn-category"
+                data-filter=".category-c"
+              >
+                Визитки
+              </button>
             </li>
           </ul>
 
-          <ul class="list portfolio-items-list">
-            <li class="portfolio-item">
+          <ul class="list portfolio-items-list container-mix">
+            <li class="portfolio-item mix category-a" data-order="1">
               <img
                 class="portfolio-item-image"
                 src="./images/tekhnokryak.jpg"
@@ -108,7 +134,7 @@
                 <p class="description-category">Веб-сайт</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-b" data-order="2">
               <img
                 class="portfolio-item-image"
                 src="./images/poster.jpg"
@@ -122,7 +148,10 @@
                 <p class="description-category">Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li
+              class="portfolio-item mix category-b mix category-c"
+              data-order="3"
+            >
               <img
                 class="portfolio-item-image"
                 src="./images/seafood.jpg"
@@ -136,7 +165,10 @@
                 <p class="description-category">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li
+              class="portfolio-item mix category-a mix category-d"
+              data-order="4"
+            >
               <img
                 class="portfolio-item-image"
                 src="./images/prime.jpg"
@@ -150,7 +182,7 @@
                 <p class="description-category">Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-b" data-order="5">
               <img
                 class="portfolio-item-image"
                 src="./images/boxes.jpg"
@@ -164,7 +196,7 @@
                 <p class="description-category">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-c" data-order="6">
               <img
                 class="portfolio-item-image"
                 src="./images/site-inspiration.jpg"
@@ -178,7 +210,7 @@
                 <p class="description-category">Веб-сайт</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-b" data-order="7">
               <img
                 class="portfolio-item-image"
                 src="./images/limited-edition.jpg"
@@ -192,7 +224,7 @@
                 <p>Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-c" data-order="8">
               <img
                 class="portfolio-item-image"
                 src="./images/project-lab.jpg"
@@ -206,7 +238,7 @@
                 <p>Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item mix category-a" data-order="9">
               <img
                 class="portfolio-item-image"
                 src="./images/growing-business-app.jpg"
@@ -226,5 +258,11 @@
     </main>
 
     <!-- <footer class="footer-section"></footer> -->
+    <script src="./app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+    <script>
+      mixitup('.container-mix')
+    </script>
   </body>
 </html>

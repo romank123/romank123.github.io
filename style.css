@@ -15,6 +15,10 @@
   --team-bg-color: #f5f4fa;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 p,
 h1,
 h2,
@@ -416,4 +420,10 @@ body {
 .description-category {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.container-mix {
+}
+
+.container-mix .mix {
 }
