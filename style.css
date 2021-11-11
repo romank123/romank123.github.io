@@ -399,7 +399,6 @@ body {
 .portfolio-items-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .btn-category {
