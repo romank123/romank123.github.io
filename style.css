@@ -46,10 +46,36 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 .section {
@@ -95,8 +121,6 @@ body {
 /* header- and footer- section  */
 
 .header-section {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -113,6 +137,11 @@ body {
 .nav-section {
   display: flex;
   align-items: center;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  padding: 0;
 }
 
 .header-nav-contacts {
@@ -171,6 +200,16 @@ body {
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contact-item {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contact-item {
+    display: block;
+  }
 }
 
 .header-contact-link {
@@ -345,8 +384,16 @@ body {
 
 .portfolio-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-filter {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .portfolio-items-list {
@@ -361,8 +408,10 @@ body {
   padding: 6px 22px;
 }
 
-.category-item:not(:last-child) {
-  margin-right: 8px;
+.category-item {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-category:hover,
@@ -379,8 +428,21 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 1rem;
-  width: calc(100% / 3 - 2rem);
+  width: calc(100% - 2rem);
 }
+
+@media (min-width: 576px) {
+  .portfolio-item {
+    width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    width: calc(100% / 3 - 2rem);
+  }
+}
+
 .portfolio-item:hover {
   box-shadow: 4px 4px 10px 0px rgba(34, 60, 80, 0.1);
 }
@@ -424,7 +486,6 @@ body {
 }
 
 .portfolio-item {
-  height: 300px;
   position: relative;
 }
 .portfolio-item-image img {
