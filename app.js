@@ -26,25 +26,3 @@ var btn = document.querySelectorAll('[data-filter]')
       (e.style.color = 'white')
   }
 })
-
-// var btn = document.querySelectorAll('.btn')
-// ;[...btn].map((e) => {
-//   e.onmouseover = () => {
-//     ;(e.style.backgroundColor = '#1eae4f'), (e.style.color = 'white')
-//   }
-//   e.onmouseout = () => {
-//     e.getAttribute('data') !== ''
-//       ? ((e.style.backgroundColor = 'white'), (e.style.color = '#1eae4f'))
-//       : ''
-//   }
-//   e.onclick = () => {
-//     ;[...btn].map((e) => {
-//       e.setAttribute('data', 'active'),
-//         (e.style.backgroundColor = 'white'),
-//         (e.style.color = '#1eae4f')
-//     })
-//     e.setAttribute('data', ''),
-//       (e.style.backgroundColor = '#1eae4f'),
-//       (e.style.color = 'white')
-//   }
-// })
